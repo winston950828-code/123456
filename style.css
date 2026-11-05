@@ -1,0 +1,203 @@
+:root {
+    --primary-color: #2e5a44;
+    --accent-color: #8c6d53;
+    --bg-light: #f4f7f5;
+    --card-bg: #ffffff;
+    --text-color: #333333;
+    --text-muted: #555555;
+    --border-color: #e0e0e0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Arial, "PingFang TC", "Microsoft JhengHei", sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-light);
+    line-height: 1.6;
+}
+
+.site-header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.site-header h1 {
+    margin: 0 0 15px 0;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.site-header nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.site-header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease;
+}
+
+.site-header nav a:hover,
+.site-header nav a.active {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+#main-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.hero h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: var(--text-muted);
+    font-size: 1rem;
+}
+
+.address-card {
+    background: #eef4f0;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #c8dcd0;
+}
+
+.address-card p {
+    margin: 0;
+    font-size: 1.05rem;
+    color: var(--primary-color);
+}
+
+.divider {
+    margin: 40px 0;
+    border: 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.img-container {
+    margin: 25px 0;
+    text-align: center;
+}
+
+.img-container img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.content-section {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: left;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.info-card {
+    flex: 1;
+    min-width: 260px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.border-brown h4 {
+    color: var(--accent-color);
+    margin-top: 0;
+}
+
+.border-green h4 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.info-card ul {
+    padding-left: 20px;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.park-info-box {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 5px solid var(--primary-color);
+    line-height: 1.8;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.park-info-box p {
+    margin-top: 0;
+}
+
+.mb-15 { margin-bottom: 15px; }
+.mt-20 { margin-top: 20px; }
+
+.tip-section {
+    background: #eef4f0;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.tip-section h4 {
+    margin: 0 0 10px 0;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.tip-section p {
+    margin: 0;
+    text-align: center;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+.site-footer {
+    background-color: #222222;
+    color: #aaaaaa;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    margin-top: 50px;
+}
+
+.site-footer p {
+    margin: 0;
+}
